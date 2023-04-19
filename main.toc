@@ -22,7 +22,8 @@
 \contentsline {section}{\numberline {4}Nozzle}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Conical nozzle}{7}{subsection.4.1}%
 \contentsline {subsection}{\numberline {4.2}Bell nozzle}{7}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Plug nozzle}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.3}Rao's parabolic nozzle}{7}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Plug nozzle}{7}{subsection.4.4}%
 \contentsline {section}{\numberline {5}Scramjet (6$>$M$>$10)}{8}{section.5}%
 \contentsline {section}{\numberline {6}Rocket}{9}{section.6}%
 \contentsline {subsection}{\numberline {6.1}Cold-gas jets}{9}{subsection.6.1}%

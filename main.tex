@@ -173,7 +173,7 @@ The temperature ratio can be calculated in a similar fashion as the process is i
 \subsubsection{combustion (2$\rightarrow$b)}
 The requirements for the burner for this analysis are set to be $T_b = 1500$ K, $M_2 = 0.2$. and $P_b=P_2$ (the pressure remains the same throughout the burner --- Brayton cycle). At the burner, the process is \textcolor{red}{no longer isentropic} because for the heat added. To obtain the Mach number at the burner exit $M_b$, we can rearrange the conservation of mass and momentum by equating $PA$ and solve the quadratic. 
 \begin{gather*}
-    \text{mass cons.:}\hspace*{0.4cm}\frac{P_bA_b}{P_2A_2}\frac{M_2}{M_b}\sqrt{\frac{T_b}{T_2}},\hspace*{0.4cm}\text{momentum cons.:}\hspace*{0.4cm}\frac{M_2}{M_b}\sqrt{\frac{T_b}{T_2}} = \frac{\gamma M_2^2+1}{\gamma M_b^2+1}\\[0.1cm]
+    \text{mass cons.:}\hspace*{0.4cm}\frac{P_bA_b}{P_2A_2}=\frac{M_2}{M_b}\sqrt{\frac{T_b}{T_2}},\hspace*{0.4cm}\text{momentum cons.:}\hspace*{0.4cm}\frac{M_2}{M_b}\sqrt{\frac{T_b}{T_2}} = \frac{\gamma M_2^2+1}{\gamma M_b^2+1}\\[0.1cm]
     \therefore M_b = \frac{1}{2}\sqrt{\frac{T_2}{T_b}}\Big(M_2+\frac{1}{\gamma M_2}\Big)\pm\frac{1}{2}\sqrt{\frac{T_2}{T_b}\Big(M_2+\frac{1}{\gamma M_2}\Big)^2-\frac{4}{\gamma}} = 0.42\hspace*{0.3cm}(1.70\text{ not satisfied})
 \end{gather*}
 There are two solution for the above quadratic equation. However, the flow after the burner must satisfy $0<M_b<1$ or else the flow will choke, and the solution could lead the imaginary numbers as well.\par 
@@ -227,7 +227,7 @@ If we have a conical diffuser for oblique shock compression, it can dramatically
 
 \newpage
 \section{Nozzle}
-exhaust design becomes more important as you travel at higher speed and altitude, as the engine size increases as well. If the exhaust expands too quickly, the flow behaves as an under-expanded jet along with lots of separations. If expand too slowly, the engine will be very long and heavy, encouraging boundary layer to grow substantially. 
+exhaust design becomes more important as you travel at higher speed and altitude, as the engine size increases as well. If the exhaust expands too quickly, the flow behaves as an under-expanded jet along with lots of separations. If expand too slowly, the engine will be very long and heavy, encouraging boundary layer to grow substantially. Nozzle design is about getting as much flow parallel as possible in short distance as possible. 
 
 \subsection{Conical nozzle}
 \begin{itemize}
@@ -238,19 +238,26 @@ exhaust design becomes more important as you travel at higher speed and altitude
         \begin{gather*}
             L = \sqrt{\frac{A^*}{\pi}}\Bigg(\frac{\sqrt{A/A^*}-1}{\tan\beta}\Bigg)
         \end{gather*}
+    \item \underline{\textbf{NOTE:}} Fairly long, very poor but easy to make.
 \end{itemize}
 
-\vspace*{-0.4cm}
 \subsection{Bell nozzle}
 \begin{itemize}
     \item Exit flow is purely axial $\rightarrow$ no momentum lost 
     \item Bell nozzles are designed for a \textbf{specific back pressure} and \textbf{exit Mach number}, would be hard to change geometry in flight
     \item The shape of the nozzle can be designed by using the method of characteristics, where $\theta\pm\delta=C$
-    \item Using \underline{\textbf{Rao's parabolic nozzle}} gives maximum thrust for a given length, and can be characterised as the following, where the ideal nozzle works out to be almost \underline{\textbf{parabolic}}. 
-        \begin{gather*}
-            y(x)\approx\sqrt{\frac{A^*}{\pi}}+\tan(\theta_n)x+\frac{\tan(\theta_e)-\tan(\theta_n)}{2L}x^2,\hspace*{0.5cm}L_{cone} = \sqrt{\frac{A^*}{\pi}}\Bigg(\frac{\sqrt{A/A^*}-1}{\tan\beta}\Bigg)
-        \end{gather*}
-    the boundary conditions (initial \& final parabola angle $\theta$, $A/A^*$) have been tabulated. 
+    \item \underline{\textbf{NOTE:}} Best performance, but too big and long, increases weight 
+\end{itemize}
+
+\subsection{Rao's parabolic nozzle}
+\begin{itemize}
+    \item gives maximum thrust for a given length, and can be characterised as the following, where the ideal nozzle works out to be almost \underline{\textbf{parabolic}}. 
+    \item $L_f$ is the desired length of the nozzle as a fraction of the length of a 15$^\circ$ cone giving the same area ratio.
+    \begin{gather*}
+        y(x)\approx\sqrt{\frac{A^*}{\pi}}+\tan(\theta_n)x+\frac{\tan(\theta_e)-\tan(\theta_n)}{2L}x^2,\hspace*{0.5cm}L_{cone} = \sqrt{\frac{A^*}{\pi}}\Bigg(\frac{\sqrt{A/A^*}-1}{\tan\beta}\Bigg)
+    \end{gather*}
+    the boundary conditions (initial \& final parabola angle $\theta$, $A/A^*$) have been tabulated.
+    \item \underline{\textbf{NOTE:}} Good trade-off between efficiency and size. 
 \end{itemize}
 
 \subsection{Plug nozzle}
