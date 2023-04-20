@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.7)  19 APR 2023 17:06
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (TeX Live 2022) (preloaded format=pdflatex 2022.10.7)  20 APR 2023 18:03
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -762,53 +762,53 @@ Overfull \hbox (5.0pt too wide) in paragraph at lines 459--460
 <Figure/detonation scheme.png, id=367, 400.49625pt x 246.9225pt>
 File: Figure/detonation scheme.png Graphic file (type png)
 <use Figure/detonation scheme.png>
-Package pdftex.def Info: Figure/detonation scheme.png  used on input line 472.
+Package pdftex.def Info: Figure/detonation scheme.png  used on input line 473.
 (pdftex.def)             Requested size: 182.09486pt x 112.27078pt.
  [13 <./Figure/detonation scheme.png>]
 <Figure/rayleigh.png, id=375, 432.61626pt x 404.51125pt>
 File: Figure/rayleigh.png Graphic file (type png)
 <use Figure/rayleigh.png>
-Package pdftex.def Info: Figure/rayleigh.png  used on input line 510.
+Package pdftex.def Info: Figure/rayleigh.png  used on input line 511.
 (pdftex.def)             Requested size: 163.88815pt x 153.2406pt.
 <Figure/RH.png, id=376, 411.5375pt x 392.46625pt>
 File: Figure/RH.png Graphic file (type png)
 <use Figure/RH.png>
-Package pdftex.def Info: Figure/RH.png  used on input line 514.
+Package pdftex.def Info: Figure/RH.png  used on input line 515.
 (pdftex.def)             Requested size: 163.88815pt x 156.29503pt.
 <Figure/MCJ.png, id=377, 513.92pt x 364.36125pt>
 File: Figure/MCJ.png Graphic file (type png)
 <use Figure/MCJ.png>
-Package pdftex.def Info: Figure/MCJ.png  used on input line 544.
+Package pdftex.def Info: Figure/MCJ.png  used on input line 545.
 (pdftex.def)             Requested size: 227.62206pt x 161.38133pt.
  [14 <./Figure/rayleigh.png> <./Figure/RH.png> <./Figure/MCJ.png>]
 <Figure/PV.png, id=388, 260.975pt x 222.8325pt>
 File: Figure/PV.png Graphic file (type png)
 <use Figure/PV.png>
-Package pdftex.def Info: Figure/PV.png  used on input line 582.
+Package pdftex.def Info: Figure/PV.png  used on input line 583.
 (pdftex.def)             Requested size: 91.04742pt x 77.74092pt.
 <Figure/TS.png, id=389, 238.8925pt x 211.79124pt>
 File: Figure/TS.png Graphic file (type png)
 <use Figure/TS.png>
-Package pdftex.def Info: Figure/TS.png  used on input line 586.
+Package pdftex.def Info: Figure/TS.png  used on input line 587.
 (pdftex.def)             Requested size: 91.04742pt x 80.7174pt.
  [15 <./Figure/PV.png> <./Figure/TS.png>] [16]
 <Figure/DDT.png, id=405, 552.0625pt x 351.3125pt>
 File: Figure/DDT.png Graphic file (type png)
 <use Figure/DDT.png>
-Package pdftex.def Info: Figure/DDT.png  used on input line 649.
+Package pdftex.def Info: Figure/DDT.png  used on input line 650.
 (pdftex.def)             Requested size: 227.62206pt x 144.85385pt.
 
-Overfull \hbox (5.0pt too wide) in paragraph at lines 649--650
+Overfull \hbox (5.0pt too wide) in paragraph at lines 650--651
  [][] 
  []
 
 <Figure/CDE.png, id=406, 730.73pt x 444.66125pt>
 File: Figure/CDE.png Graphic file (type png)
 <use Figure/CDE.png>
-Package pdftex.def Info: Figure/CDE.png  used on input line 667.
+Package pdftex.def Info: Figure/CDE.png  used on input line 668.
 (pdftex.def)             Requested size: 250.38564pt x 152.3634pt.
 
-Overfull \hbox (27.76358pt too wide) in paragraph at lines 667--668
+Overfull \hbox (27.76358pt too wide) in paragraph at lines 668--669
  [][] 
  []
 
@@ -828,7 +828,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  71i,18n,79p,762b,843s stack positions out of 10000i,1000n,20000p,200000b,200000s
 {/usr/local/texlive/2022/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc}</usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/texlive/2022/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb>
-Output written on main.pdf (17 pages, 1075736 bytes).
+Output written on main.pdf (17 pages, 1075959 bytes).
 PDF statistics:
  529 PDF objects out of 1000 (max. 8388607)
  421 compressed objects within 5 object streams
