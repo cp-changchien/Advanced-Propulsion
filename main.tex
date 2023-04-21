@@ -341,36 +341,52 @@ Most of the propellant/fuel only burn at high pressure, therefore, high pressure
 \subsection{Turbopumps}
 Large liquid-fuel rockets extract some energy from the expansion of the working fluids, and use this energy to drive the massive fuel pumps.
 
-\begin{multicols}{2}
+\begin{multicols}{4}
 \subsubsection{Expansion Turbopumps}
 Liquid fuel is vaporised by passing through nozzle, work is extracted from the increase in pressure to drive to pumps. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.32\textwidth]{Figure/turbopump1.png}
+    \includegraphics[width=0.27\textwidth]{Figure/turbopump1.png}
 \end{figure}
 
-\vspace*{-0.5cm}
 \subsubsection{Gas-generator turbopumps}
 A small amount of fuel is burned separately, and the work to drive the pumps is extracted from the the exhaust. Due to the vented exhaust, some of the potential thrust is lost. 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{Figure/turbopump.png}
+    \includegraphics[width=0.26\textwidth]{Figure/turbopump.png}
 \end{figure}
 
 \subsubsection{Staged-combustion turbopump}
 The fuel is partially combusted, and work is extracted from the mix of remaining fuel and exhaust.
+\vspace*{2cm}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.35\textwidth]{Figure/staged1.png}
+    \includegraphics[width=0.25\textwidth]{Figure/staged1.png}
 \end{figure}
 
+% \vspace*{1cm}
 \subsubsection{Aspiration turbopump}
 cryogenic fuel (LH$_2$/LOX) is used to condense ambient air; this is mixed with additional oxidizer as required. Oxidizer flow can be adjusted depending on availability of atmospheric air. Dramatically improved fuel weight / total weight ratio 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.33\textwidth]{Figure/aspiration.png}
+    \includegraphics[width=0.25\textwidth]{Figure/aspiration.png}
 \end{figure}
 \end{multicols}
+
+\subsection{Thermodynamic Analysis on Turbopumps}
+The thermodynamic analysis on a conventional expansion turbopump can be done by separating the analysis into fuel and oxygen cycle, to obtain the pressure required at the combustion chamber. 
+\begin{gather*}
+    W_{turb} = h_3-h_4 = C_pT_3\Bigg(1-\frac{T_4}{T_3}\Bigg) = C_pT_3\Bigg[1-\Bigg(\frac{P_4}{P_3}\Bigg)^{\frac{\gamma-1}{\gamma}}\Bigg]
+\end{gather*}
+
+The work generated from the energy of the vapour drives the turbine, thus generating work for both the compressor, therefore, the compressor work should equal to the turbine work,
+\begin{gather*}
+    W_{turb} = W_{comp1}+W_{comp2} = C_pT_3\Bigg[1-\Bigg(\frac{P_4}{P_3}\Bigg)^{\frac{\gamma-1}{\gamma}}\Bigg]
+\end{gather*}
+Because the fuel was first passed along through the nozzle, the heat transfer to the fuel from the combustion product can be estimate as following, 
+\begin{gather*}
+    \frac{Q_{in}}{\dot{m}_{fuel}} = h_3-h_2
+\end{gather*}
 
 Though the operation is simple,, the practical design and manufacture of turbopumps is highly complex,
 \begin{itemize}
@@ -378,6 +394,7 @@ Though the operation is simple,, the practical design and manufacture of turbopu
     \item parts are designed to work at supercooled temperatures, parts need to be "pre-cooled"
     \item some rocket fuels are highly corrosive. 
 \end{itemize}
+
 
 
 \newpage
@@ -434,6 +451,18 @@ A similar idea is to spray a useful inert coolant (water) into the engine inlet.
     \item \underline{\textbf{Pros:}} (1) coolant is non-reactive and stable. (2) reduce inlet temperature and increase density - good for performance. (3) HUGE increase in efficiency for most amount of mass injection. (better than LOX)
     \item \underline{\textbf{Cons:}} (1) lots of additional weight. (2) stagnation pressure loss through heat exchangers. (3) Displacing air with steam, and steam doesn't burn.
 \end{itemize}
+\subsubsection{Thermodynamic Analysis}
+Assume using water as pre-compression cooling, objective is to cool down the flow by $5^{\circ}$K to increase the thermo efficiency by 1\%. (heat lost to vapourising the water is about 2000 kJ/kg of water)
+\begin{gather*}
+    \Delta H_{H_2O} = 2000\cdot\dot{m}_{H_2O};\hspace*{0.3cm}\text{Then for air,}\hspace*{0.3cm}\Delta h = \frac{\Delta H}{\dot{m}_{air}} = \frac{\Delta H_{H_2O}}{\dot{m}_{air}} = 2000\cdot\frac{\dot{m}_{H_2O}}{\dot{m}_{air}} = C_p\Delta T\\[0.2cm]
+    \dot{m}_{H_2O} = \frac{C_p\Delta T}{2000}\cdot\dot{m}_{air}
+\end{gather*}
+the mass flow rate of air can be inferred from the thrust generated, 
+\begin{gather*}
+    F_T\approx\dot{m}_{air}[u_{exit}-u_{inlet}]
+\end{gather*}
+
+
 
 \subsection{Increasing Combustion chamber pressure}
 
@@ -450,13 +479,13 @@ The process where all of the duel-air mix is consumed, leaving only hot combusti
 \begin{multicols}{2}
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.47\textwidth]{Figure/deflagration.png}
+        \includegraphics[width=0.43\textwidth]{Figure/deflagration.png}
         \caption[short]{deflagration}
     \end{figure}
 
     \begin{figure}[H]
         \centering
-        \includegraphics[width=0.5\textwidth]{Figure/detonation.png}
+        \includegraphics[width=0.43\textwidth]{Figure/detonation.png}
         \caption[short]{detonation}
     \end{figure}
 \end{multicols}
@@ -559,12 +588,13 @@ where $q = f_{FA}\varepsilon$, where $\varepsilon = 120000$ kJ/kg. $C_p$ for hyd
     C_p\approx\frac{V_{fuel}C_{p,fuel}+V_{air}C_{p,air}}{V_{fuel}+V_{air}}\approx\Bigg(\frac{m_fR_fT_f}{P_f}C_{p,fuel}+\frac{m_aR_aT_a}{P_a}C_{p,air}\Bigg)\Bigg(\frac{m_fR_fT_f}{P_f}+\frac{m_aR_aT_a}{P_a}\Bigg)^{-1}
 \end{gather*}
 
-Since gases are mixed: $P_f = P_a$ and $T_f = T_a$
+Since gases are mixed: $P_f = P_a$ and $T_f = T_a$, where $m_f = f_{FA}m_a$.
 
 \vspace*{-0.5cm}
 \begin{gather*}
-    C_p\approx\frac{f_{FA}m_aR_fC_{p,fuel}+m_aR_aC_{p,air}}{f_{FA}m_aR_f+m_aR_a},\hspace*{0.4cm}\text{where}\hspace*{0.3cm}m_f = f_{FA}m_a\\[0.2cm]
-    \because\hspace*{0.2cm}R_f = C_{p,fuel}\frac{\gamma_f-1}{\gamma_f} = 4091\text{ J/Kg}^{\circ}\text{K}\hspace*{0.5cm}\therefore\hspace*{0.2cm}C_p \approx\frac{f_{FA}R_fC_{p,fuel}+R_aC_{p,air}}{f_{FA}R_f+R_a} = 4.905\text{ J/Kg}^{\circ}\text{K}
+    C_p\approx\frac{f_{FA}m_aR_fC_{p,fuel}+m_aR_aC_{p,air}}{f_{FA}m_aR_f+m_aR_a}\approx\boxed{\frac{f_{FA}R_fC_{p,fuel}+R_aC_{p,air}}{f_{FA}R_f+R_a}} = 4.905\text{ J/Kg}^{\circ}\text{K},\hspace*{0.4cm}\\[0.2cm]
+    \text{Similarly,}\hspace*{0.4cm}\gamma_f = \frac{f_{FA}R_f\gamma_f+R_{air}C_{p,air}}{f_{FA}R_f+R_{air}}\\[0.2cm]
+    \because\hspace*{0.2cm}R_f = C_{p,fuel}\frac{\gamma_f-1}{\gamma_f} = 4091\text{ J/Kg}^{\circ}\text{K}\hspace*{0.5cm}
 \end{gather*}
 Then, at say $T = 300$ K,
 \begin{gather*}
