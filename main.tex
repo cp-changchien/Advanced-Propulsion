@@ -549,8 +549,8 @@ The expression above is called the \textcolor{red}{\textbf{Rankine-Hugoniot rela
 To find the relation between $M_A$ and $M_B$, we first need to nondimensionalise and substitute earlier results.
 \begin{gather*}
     \begin{split}
-        &\text{By substituting}\hspace*{0.2cm}a = \sqrt{\frac{\gamma P}{\rho}},\hspace*{2.5cm}\frac{2\gamma}{\gamma-1}\Bigg(\frac{P_B}{P_A}\frac{\rho_A}{\rho_B}-1\Bigg)-\frac{q}{a_A^2} = \Bigg(1+\frac{\rho_A}{\rho_B}\Bigg)\Bigg(\frac{P_B}{P_A}-1\Bigg)\\
-        &\text{From}\hspace*{0.3cm}M_A^2 = \frac{1}{\gamma P_A\rho_A}\Bigg(\frac{P_B-P_A}{\rho_A^{-1}-\rho_B^{-1}}\Bigg),\hspace*{1.2cm}\frac{\rho_A}{\rho_B}=\frac{1}{\gamma M_A^2}\Bigg(1-\frac{P_B}{P_A}\Bigg)+1
+        &\text{By substituting}\hspace*{0.2cm}a = \sqrt{\frac{\gamma P}{\rho}},\hspace*{2.3cm}\Rightarrow\hspace*{0.2cm}\frac{2\gamma}{\gamma-1}\Bigg(\frac{P_B}{P_A}\frac{\rho_A}{\rho_B}-1\Bigg)-\frac{q}{a_A^2} = \Bigg(1+\frac{\rho_A}{\rho_B}\Bigg)\Bigg(\frac{P_B}{P_A}-1\Bigg)\\
+        &\text{From}\hspace*{0.3cm}M_A^2 = \frac{1}{\gamma P_A\rho_A}\Bigg(\frac{P_B-P_A}{\rho_A^{-1}-\rho_B^{-1}}\Bigg),\hspace*{1cm}\Rightarrow\hspace*{0.2cm}\frac{\rho_A}{\rho_B}=\frac{1}{\gamma M_A^2}\Bigg(1-\frac{P_B}{P_A}\Bigg)+1
     \end{split}\\[0.5cm]
     \boxed{\frac{2\gamma}{\gamma-1}\Bigg[\frac{P_B}{P_A}\Bigg(\frac{1}{\gamma M_A^2}\Bigg[1-\frac{P_B}{P_A}\Bigg]+1\Bigg)-1\Bigg]-\frac{q}{a_A^2}=\Bigg[\Bigg(\frac{1}{\gamma M_A^2}\Bigg[1-\frac{P_B}{P_A}\Bigg]+2\Bigg)\Bigg]\Bigg(\frac{P_B}{P_A}-1\Bigg)}
 \end{gather*}
@@ -604,7 +604,7 @@ Then, at say $T = 300$ K,
 \subsection{Humphrey cycle}
 The cycle efficiency can be expressed as, we also need to find expression for the expansion temperature ratio $T_4/T_1$
 \begin{gather*}
-    \eta_{cycle} = 1-\frac{h_4-h_1}{\Delta h_{burn}}=1-\frac{C_p(T_4-T_1)}{q} = 1-\frac{C_pT_1}{q}\Bigg(\frac{T_4}{T_1}\Bigg)
+    \eta_{cycle} = 1-\frac{h_4-h_1}{\Delta h_{burn}}=1-\frac{C_p(T_4-T_1)}{q} = 1-\frac{C_pT_1}{q}\Bigg(\frac{T_4}{T_1}-1\Bigg)
 \end{gather*}
 
 \begin{multicols}{2}
@@ -618,7 +618,7 @@ The cycle efficiency can be expressed as, we also need to find expression for th
     \end{figure}
 \end{multicols}
 \vspace*{-0.5cm}
-From the definition of entropy,
+From the definition of entropy, and $h = e+P\nu$
 \begin{gather*}
     dq = Tds = de+Pd\nu\hspace*{0.3cm}\Rightarrow\hspace*{0.3cm}ds = \frac{1}{T}dh-\frac{\nu}{T}dP\hspace*{0.3cm}\Bigg(\because\frac{\nu}{T} = \frac{1}{\rho T}=\frac{R}{P} = \frac{\gamma-1}{\gamma}\frac{C_p}{P}\Bigg)\\[0.2cm]
     \Rightarrow\hspace*{0.3cm}\int_{1}^{4}ds = C_p\int_{1}^{4}\frac{dT}{T}-C_p\frac{\gamma -1}{\gamma}\int_{1}^{4}\frac{dP}{P}\hspace*{0.3cm}\Rightarrow\hspace*{0.3cm}\frac{s_4-s_1}{C_p}=\ln\Bigg(\frac{T_4}{T_1}\Bigg)-\frac{\gamma-1}{\gamma}\ln\Bigg(\frac{P_4}{P_1}\Bigg)
