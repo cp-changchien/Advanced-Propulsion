@@ -54,7 +54,7 @@ Requires: (a) no heat flux through walls, (b) no work done by/to fluid (c) No lo
 If we allow change in entropy (i.e. Q through the wall) and we take two stations on the pipe so that the surface area between is small so that $Q$ is negligible. Prior to analysis, note that regardless of losses, \textbf{momentum and mass must still be conserved}.
 \begin{gather*}
     \frac{P_2}{P_1} = \underbrace{\frac{1+\gamma M_1^2}{1+\gamma M_2^2}}_\text{momen. con} = \underbrace{\frac{M_1}{M_2}\sqrt{\frac{T_2}{T_1}}}_\text{mass con} = \underbrace{\frac{M_1}{M_2}\sqrt{\frac{1+\frac{\gamma-1}{2}M_1^2}{1+\frac{\gamma-1}{2}M_2^2}}}_\text{no stagn. T losses}\\
-    \boxed{M_2=\sqrt{\frac{(\gamma-1M_1^2+2)}{2\gamma M_1^2-(\gamma-1)}}}
+    \boxed{M_2=\sqrt{\frac{(\gamma-1)M_1^2+2}{2\gamma M_1^2-(\gamma-1)}}}
 \end{gather*}
 The above equation presents the possibility of a step change in Mach number, which indicates a discontinuity (\boxed{\textbf{SHOCK}}) \textbf{MUST} happen. Only if the discontinuity happens, the relation holds by necessarily require $M_1>1$ (supersonic inlet flow), assuming no heat flux through walls. 
 
@@ -81,6 +81,7 @@ In order to match the difference in area ratio, requires overspeed to "swallow" 
     \centering
     \includegraphics[width=0.5\textwidth]{Figure/diffuser.png}
     \caption{diffuser}
+    \label{fig:diffus  er}
 \end{figure}
 \vspace*{-0.3cm}
 \underline{\textbf{NOTE:}} NOT practical when $M_\infty\approx1.8$.
